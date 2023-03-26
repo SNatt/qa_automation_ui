@@ -8,7 +8,6 @@ class BasePage:
         self.url = url
 
     def open(self):
-        '''Метод открывает страницу.'''
         self.driver.get(self.url)
 
     def element_is_visible(self, locator, timeout=5):
